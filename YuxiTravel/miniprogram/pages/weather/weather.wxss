@@ -1,0 +1,21 @@
+/* pages/weather/weather.wxss */
+
+/* 背景图 */
+.bgi{
+ background: url('	https://7a6c-zlxiaochengxu-d4ltl-1300288333.tcb.qcloud.la/other/weather.jpg?sign=b0879dc4954aed4860031a1ee4757e57&t=1584859832') no-repeat;
+   width: 100%;
+  height: 667px;
+}
+/* 实时天气 */
+.top{
+  padding-top: 10px;
+  text-align: center;
+
+}
+/* 未来天气 */
+.center{
+  border-top:1px  solid #ccc;
+  margin:10px;
+  text-align: center;
+   
+}

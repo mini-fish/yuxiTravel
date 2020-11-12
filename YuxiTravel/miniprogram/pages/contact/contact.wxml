@@ -1,0 +1,9 @@
+<!--pages/contact/contact.wxml-->
+<view class="top">
+<image src="../../images/logo.jpg" mode="widFix"></image>
+<text>玉溪之旅</text>
+</view>
+<view class="hr"></view>
+<view class="center">
+<text>此微信小程序不用于任何商业盈利行为，所涉及图片、旅游信息和文章部分来源于网络，如有侵权，请联系删除，谢谢！\nphone:18308799715\nemail:122242305@qq.com</text>
+</view>

@@ -1,0 +1,39 @@
+/* pages/contact/contact.wxss */
+.top{
+  width: 100%;
+  height: 250px;
+  position: relative;
+  top: 20%;
+}
+ image{
+  height: 80px;
+  width: 80px;
+  display: block;
+  border-radius: 50%; 
+  left: 38%;
+  position: absolute;
+  top: 38%;
+}
+.top text{
+  font-size: 20px;
+  font-weight: bold;
+  display: block;
+  position: absolute;
+  left: 38%;
+  bottom:10%;
+  color: #666
+}
+.hr{
+  margin: 10px auto;
+  height: 1px;
+  background-color: #d8d8d8;
+  width: 80%;
+}
+/* 中部申明 */
+.center{
+  line-height: 30px;
+  padding: 30px;
+}
+.center text{
+  color: #666;
+}

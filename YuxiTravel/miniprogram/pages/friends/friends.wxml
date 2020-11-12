@@ -1,0 +1,19 @@
+<block wx:for="{{dataList}}" wx:key="index">
+  <view class="use">
+    <image class="image" src="{{userinfo.avatarUrl}}"></image>
+    <view class="name">{{userinfo.nickName}}</view>
+  </view>
+  <view class="itemRoot">
+    <view>
+      <text class="desc">{{item.desc}}</text>
+    </view>
+    <view class="imgRoot">
+      <block class="imgList" wx:for="{{item.fileIDs}}" wx:for-item="itemImg" wx:key="index">
+        <image class="img" src='{{itemImg}}' mode='aspectFill' data-img='{{[itemImg,item.fileIDs]}}' bindtap="previewImg"></image>
+      </block>
+    </view>
+    <text class="desc">{{item.date}}</text>
+  </view>
+  <view class="hr"></view>
+
+</block>

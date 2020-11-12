@@ -1,0 +1,45 @@
+
+.itemRoot {
+  margin-left: 50rpx;
+  top:35px;
+}
+.itemRoot text{
+  margin-left: 50rpx;
+}
+
+.imgRoot {
+  margin-left: 50rpx;
+}
+
+.imgList {
+  display: inline-block;
+}
+
+.img {
+  margin: 5rpx;
+  position: relative;
+  width: 155rpx;
+  height: 155rpx;
+}
+
+.use .image {
+  width: 32px;
+  height: 32px;
+  border-radius: 10%;
+  display: inline-block;
+  margin: 5px;
+  position: relative;
+}
+
+.use .name {
+  display: inline-block;
+  font-size: 14px;
+  position: absolute;
+  margin-top: 10px;
+}
+.hr{
+  background-color: #e0e0e0;
+  height: 1px;
+  width: 100%;
+  margin: 10px 0;
+}

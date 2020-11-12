@@ -1,0 +1,52 @@
+/* 标题 */
+.title{
+  margin-top: 15px;
+}
+.title text{
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+}
+
+/* 图片 */
+.img image{
+  width: 92%;
+  margin: 0 auto;
+  display: block;
+}
+.img2 image{
+  width: 98%;
+  margin: 0 auto;
+  display: block;
+}
+
+/* 文章 */
+
+.t1 text{
+  font-size: 14px;
+  color: #5F6C90;
+  font-weight: bold;
+  padding: 0 12px;
+  margin-top: 10px;
+  display: block;
+}
+.t2{
+  line-height: 25px;
+  padding: 0 10px;
+  font-size: 15px;
+  color: #666;
+}
+.hr {
+  margin: 10px auto;
+  width: 92%;
+  border: 1px solid #333;
+}
+.hr-two {
+  margin: 10px auto;
+  width: 92%;
+  height: 1px;
+  background-color: #333;
+}

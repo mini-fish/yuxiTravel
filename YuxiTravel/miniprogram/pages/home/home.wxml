@@ -1,0 +1,55 @@
+<!-- 轮播图 -->
+<view>
+  <swiper indicator-dots="true" indicator-color="#fff" indicator-active-color="#2C95FA" interval="3000" sircular="true" autoplay="true">
+    <swiper-item>
+      <image src="../../images/1.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/2.jpg" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="../../images/3.jpg" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 导航栏 -->
+<view class="img_center">
+  <navigator url="../weather/weather" open-type="navigate" hover-class="none">
+    <view>
+      <image src="../../images/4.png" mode="widFix"></image>
+      <text>今日天气</text>
+    </view>
+  </navigator>
+  <navigator url="../hot/hot" open-type="navigate" hover-class="none">
+    <view>
+      <image src="../../images/5.png"></image>
+      <text>热门景点</text>
+    </view>
+  </navigator>
+  <navigator url="../place/place" open-type="navigate" hover-class="none">
+    <view>
+      <image src="../../images/6.png"></image>
+      <text>我的位置</text>
+    </view>
+  </navigator>
+</view>
+
+<!-- 横线 -->
+
+<view class="line"></view>
+
+<!-- 景点推荐 -->
+
+<view class="foot">
+  <text>景点推荐</text>
+</view>
+<view class="recommend">
+  <view wx:for="{{datalist}}" wx:key="index" bindtap="goDetail" data-item="{{item}}">
+    <image src="{{item.img}}" mode="widFix"></image>
+    <view class="recommend_one">
+    <image src="../../images/recommend.png"></image>
+      <text class="t1">{{item.title}}</text>
+      <text class="t2">{{item.desc}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,110 @@
+<view>
+  <swiper indicator-dots="true" indicator-color="#fff" indicator-active-color="#2C95FA" interval="3000" sircular="true" autoplay="true">
+    <swiper-item>
+      <image src="{{detail.img1}}" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{detail.img2}}" mode="widthFix"></image>
+    </swiper-item>
+    <swiper-item>
+      <image src="{{detail.img3}}" mode="widthFix"></image>
+    </swiper-item>
+  </swiper>
+</view>
+<!-- 顶部 -->
+<view class="top">
+  <view class="top-title">{{detail.title}}</view>
+  <view class="top-text">
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{detail.desc4}}</text>
+  </view>
+</view>
+
+<!-- 中部 -->
+<navigator url="../place/place" open-type="navigate" hover-class="none">
+  <view class="center">
+    <view class="center-left">
+      <image src="../../images/recommend.png"></image>
+      {{detail.desc5}}
+    </view>
+    <view class="center-right">
+      <image src="../../images/ditu.png"></image>
+    </view>
+  </view>
+</navigator>
+
+<!-- 底部 -->
+<view class="foot">
+  <view class="foot-top">
+    <image src="../../images/time.png"></image>
+    <text>{{detail.desc6}}</text>
+  </view>
+  <view class="foot-center">
+    <image src="../../images/station.png"></image>
+    <text class="foot-center-t">{{detail.desc7}}</text>
+    <view>
+      <text>{{detail.desc8}}</text>
+    </view>
+    <view>
+      <text>{{detail.desc9}}</text>
+    </view>
+    <view>
+      <text>{{detail.desc10}}</text>
+    </view>
+  </view>
+  <view class="foot-center-t1">
+    <text>{{detail.desc11}}</text>
+  </view>
+  <view class="foot-bottom">
+    <image src="../../images/price.png"></image>
+    <text>{{detail.desc12}}</text>
+  </view>
+  <view class="foot-bottom-price">
+    <text>{{detail.desc13}}</text>
+    <view>
+      <text>{{detail.desc14}}</text>
+    </view>
+  </view>
+</view>
+
+<!-- 评论区 -->
+<view class="pinglun-tip">用户评论</view>
+<view class="pinglun" wx:for="{{pinglun}}" wx:key="index">
+  <view>
+    <text>{{userinfo.nickName}}：</text>
+    <text>{{item.content}}</text>
+  </view>
+</view>
+
+
+
+
+
+<!-- 底部固定 -->
+<view class="foot-fixed">
+  <view class="foot-fixed-left">
+    <!-- 收藏 -->
+    <image src="{{imgUrl}}" bindtap="clickMe"></image>
+  </view>
+
+  <!-- 发表评论弹窗 -->
+  <view class="foot-fixed-center">
+    <view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}">
+    </view>
+    <view class="mask-content" wx:if="{{showModal}}">
+      <textarea class="input" bindinput="getContent" placeholder="请输入评论内容" value="{{content}}"></textarea>
+      <button class="button1"  bindtap="fabiao" type="primary" size="mini">发表</button>
+      <button class="button2" bindtap="go" size="mini" plain="true">退出</button>
+    </view>
+    <button bindtap="submit" size="mini" plain="true">
+      <image src="../../images/express.png"></image>
+    </button>
+  </view>
+
+
+  <!-- 分享景点 -->
+  <view class="foot-fixed-right">
+    <button open-type="share" size="mini" plain="true">
+      <image src="../../images/share.png"></image>
+    </button>
+  </view>
+</view>

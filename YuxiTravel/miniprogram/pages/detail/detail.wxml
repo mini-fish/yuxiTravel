@@ -1,0 +1,40 @@
+<view class="title">
+  <text>{{detail.title}}</text>
+</view>
+<view class="hr"></view>
+<view class="img">
+  <image src="{{detail.img1}}"></image>
+</view>
+<view class="t1">
+  <text>{{detail.desc1}}</text>
+</view>
+<view class="hr-two"></view>
+<view class="t2">
+  <view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{detail.desc2}}</text>
+  </view>
+  <view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{detail.desc3}}</text>
+  </view>
+  <view class="img2">
+    <image src="{{detail.img2}}"></image>
+  </view>
+  <view class="t1">
+    <text>{{detail.desc4}}</text>
+  </view>
+  <view class="hr-two"></view>
+  <view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{detail.desc5}}</text>
+  </view>
+  <view class="img2">
+    <image src="{{detail.img3}}"></image>
+  </view>
+  <view class="t1">
+    <text>{{detail.desc6}}</text>
+  </view>
+  <view class="hr-two"></view>
+  <view>
+    <text decode="{{true}}" space="{{true}}">&nbsp;&nbsp;&nbsp;&nbsp;{{detail.desc7}}</text>
+  </view>
+
+</view>

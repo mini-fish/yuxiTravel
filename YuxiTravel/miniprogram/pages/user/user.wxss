@@ -1,0 +1,185 @@
+/* 登录 */
+
+.login {
+  position: relative;
+  background-color: #f6f6f6;
+  height: 200rpx;
+  border-bottom: 1px solid #d8d8d8;
+  width: 95%;
+  margin: 0 auto;
+}
+
+/*
+.login image{
+  width: 100%;
+  height: 300rpx;
+  margin: 0;
+  padding: 0;
+}
+.login .login-head{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0 auto;
+  display: block;
+  top: 80rpx;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+  position: absolute;
+  left: 40%;
+} */
+
+.uploader-container {
+  border-bottom: 1px solid #d8d8d8;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.uploader-container .image {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 0 auto;
+  display: block;
+  top: 80rpx;
+  border-radius: 50%;
+  margin-bottom: 10rpx;
+  position: absolute;
+}
+
+.name {
+  text-align: center;
+  padding-top: 10px;
+  position: absolute;
+  top: 220rpx;
+  color: #666;
+}
+
+.login button {
+  background: #d8d8d8;
+  margin-top: 70rpx;
+  color: #333;
+  left: 41%;
+}
+
+/* 中部设置 */
+
+.use_center .button-set {
+  width: 100%;
+  margin-top: 15px;
+  text-align: left;
+  font-size: 16px;
+  background-color: #f6f6f6;
+  font-weight: normal;
+  padding: 0 15px;
+}
+
+button::after {
+  border: 0;
+}
+
+.use_center view {
+  height: 30px;
+}
+
+.use_center .hr {
+  margin: 10px auto;
+  height: 1px;
+  background-color: #d8d8d8;
+  width: 95%;
+}
+
+.use_center .text1 {
+  /* display: inline-block; */
+  padding: 14px;
+  line-height: 30px;
+}
+
+.use_center .text2 {
+  /* display: inline-block; */
+  float: right;
+  margin-right: 20px;
+}
+
+.text3 {
+  /* display: inline-block; */
+  float: right;
+  margin-right: 6px;
+}
+
+/* 底部 */
+
+/* 底部滑动 */
+.use_foot .nav {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx;
+  font-size: 30rpx;
+}
+.use_foot .nav view:active{
+  color:#2c95fa;
+}
+.use_foot swiper{
+  width: 100%;
+  height: 100vh;
+}
+.use_foot .Hei{
+  height: 130px;
+}
+
+
+
+/* 底部其它 */
+
+.use_foot text {
+  display: inline-block;
+}
+
+.use_foot .text3 {
+  border-bottom: 1px solid #2c95fa;
+  float: left;
+  margin-left: 50px;
+}
+
+.use_foot .text4 {
+  margin-left: 10px;
+}
+
+.use_foot .text5 {
+  float: right;
+  margin-right: 50px;
+}
+
+.use_foot .hr2 {
+  margin: 10px auto;
+  height: 1px;
+  background-color: #d8d8d8;
+  width: 95%;
+}
+
+.use_foot .collect {
+  width: 95%;
+  height: 80px;
+  border-bottom: 1px solid #999;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  padding-bottom: 5px;
+}
+
+.use_foot image {
+  height: 80px;
+  width: 100px;
+  position: absolute;
+}
+
+.use_foot .text6 {
+  margin-left: 110px;
+  float: left;
+  position: absolute;
+}
+
+.use_foot .text7 {
+  font-size: 10px;
+  color: #999;
+  float: right;
+  margin-top: 50px;
+  margin-right: 20px;
+}

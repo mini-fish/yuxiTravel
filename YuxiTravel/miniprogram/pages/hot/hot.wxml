@@ -1,0 +1,12 @@
+<view class="hot-one" wx:for="{{datalist}}" wx:key="index" bindtap="goDetail" data-item="{{item}}">
+  <view class="hot-image">
+    <image src="{{item.img}}"></image>
+  </view>
+  <view class="hot-list">
+    <view class="title">{{item.title}}</view>
+    <view class="title-left">{{item.desc1}}</view>
+    <view class="title-right">{{item.desc2}}</view>
+    <view class="title-bottom">{{item.desc3}}</view>
+  </view>
+</view>
+

@@ -1,0 +1,55 @@
+.hot-one{
+  display: flex;
+  height: 200rpx;
+  overflow: hidden;
+  justify-content: space-between;/*两端对齐 */
+  margin-top: 5px;
+  border-bottom: 1px solid #d8d8d8;
+  margin-bottom: 5px;
+}
+.hot-image{
+  width: 100%;
+  height:200rpx;
+  margin-left: 5rpx;
+  margin-right: 20rpx; 
+}
+.hot-image image{
+  width: 180px;
+  height: 140px;
+  display: block;
+  border-radius: 10rpx;
+}
+.hot-list{
+  width: 100%;
+  margin-right: 5rpx;
+  position: relative;
+}
+.title{
+  display: -webkit-box;
+  font-size: 17px;
+  font-weight: bold;
+}
+.title-left{
+  font-size: 12px;
+  position: absolute;
+  top:40%;
+  left: 0;
+  display: inline-block;
+  background-color: #ECFAE3;
+  color: #93D961;
+}
+.title-right{
+  font-size: 12px;
+  position: absolute;
+  top:40%;
+  left: 80px;
+  display: inline-block;
+  background-color: #ECFAE3;
+  color: #93D961;
+}
+.title-bottom{
+  font-size: 12px;
+  position: absolute;
+  bottom: 5px;
+  display: block;
+}

@@ -1,0 +1,82 @@
+<!-- 登录 -->
+<view wx:if="{{!openid}}" class="login">
+  <button open-type="getUserInfo" lang="zh_CN" bindgetuserinfo="onGotUserInfo" size="mini">登录</button>
+</view>
+<view class="uploader-container" wx:if="{{openid}}">
+  <image class="image" src="{{userinfo.avatarUrl}}"></image>
+  <view class="name">{{userinfo.nickName}}</view>
+</view>
+
+
+
+
+<!-- 中部设置 -->
+<view class="use_center">
+
+  <view>
+    <button open-type="openSetting" hover-class="none" class="button-set">用户设置
+      <text class="text3">></text>
+    </button>
+  </view>
+  <view class="hr"></view>
+
+  <navigator url="../fabu/fabu" open-type="navigate" hover-class="none">
+    <view>
+      <text class="text1">撰写攻略</text>
+      <text class="text2">></text>
+    </view>
+  </navigator>
+  <view class="hr"></view>
+
+  <navigator url="../contact/contact" open-type="navigate" hover-class="none">
+    <view>
+      <text class="text1">联系我们</text>
+      <text class="text2">></text>
+    </view>
+  </navigator>
+  <view class="hr"></view>
+
+
+</view>
+
+<!-- 底部 -->
+
+<!-- 导航条 -->
+<view class="use_foot">
+  <view class="nav">
+    <view bindtap="navSwitch" data-index="0" class="{{navState==0 ? 'nav-switch-style':''}}">景点收藏</view>
+    <text class="text4">|</text>
+    <view bindtap="navSwitch" data-index="1" class="{{navState==1 ? 'nav-switch-style':''}}">浏览记录</view>
+  </view>
+
+  <view class="hr2"></view>
+
+  <!-- 滑动页 -->
+  <swiper bindchange="bindchange" current="{{navState}}" style="height:{{swHeight}}">
+    <block>
+      <!-- 我收藏的景点 -->
+      <swiper-item class="swiper">
+        <view class="collect" wx:for="{{arr}}" wx:key="index" bindtap="goDetail" data-item="{{item}}">
+          <view class="Hei">
+            <image src="{{item.img}}"></image>
+            <text class="text6">{{item.title}}</text>
+            <text class="text7">收藏于：{{item.date1}}</text>
+          </view>
+        </view>
+      </swiper-item>
+
+      <!-- 我访问过的景点 -->
+      <swiper-item>
+        <view class="collect" wx:for="{{arr1}}" wx:key="index" bindtap="goDetail" data-item="{{item}}">
+          <!-- <view wx:if="{{item.liulan>=1}}"> -->
+            <view class="Hei">
+              <image src="{{item.img}}"></image>
+              <text class="text6">{{item.title}}</text>
+              <text class="text7">访问于：{{item.date}}</text>
+            </view>
+          <!-- </view> -->
+        </view>
+      </swiper-item>
+    </block>
+  </swiper>
+</view>
